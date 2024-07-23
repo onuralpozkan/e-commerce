@@ -1,0 +1,34 @@
+@mixin square($size, $radius: 0) {
+  width: $size;
+  height: $size;
+
+  @if $radius != 0 {
+    border-radius: $radius;
+  }
+}
+
+@mixin border-radius($radius, $important: '') {
+  border-radius: $radius #{$important};
+  -moz-border-radius: $radius #{$important};
+  -o-border-radius: $radius #{$important};
+  -webkit-border-radius: $radius #{$important};
+  -ms-webkit-radius: $radius #{$important};
+  // IE fix trick
+  zoom: 1;
+}
+
+
+@mixin box-shadow($value...) {
+  -webkit-appearance: none;
+  -webkit-box-shadow: $value;
+  -moz-box-shadow: $value;
+  -ms-box-shadow: $value;
+  -o-box-shadow: $value;
+  box-shadow: $value;
+}
+
+@mixin prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
