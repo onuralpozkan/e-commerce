@@ -2,7 +2,7 @@ import { useProductsQuery } from "../queries/products.query";
 import ProductList from "./Product.list";
 
 const ProductsContainer = () => {
-  const { isLoading, data } = useProductsQuery(true);
+  const { isLoading, data } = useProductsQuery(false);
 
   if (isLoading) return "Loading...";
 

@@ -1,13 +1,8 @@
-import ProductCardContainer from "./features/Products/containers/Products.container";
-import Test from "./features/Test/Test";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router/router";
 
 function App() {
-  return (
-    <div>
-      <Test />
-      <ProductCardContainer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

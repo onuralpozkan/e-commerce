@@ -1,5 +1,11 @@
-const Home = () => {
-  return <div>Home</div>;
+import ProductsContainer from "~/features/Products/containers/Products.container";
+
+const HomePage = () => {
+  return (
+    <div>
+      <ProductsContainer />
+    </div>
+  );
 };
 
-export default Home;
+export default HomePage;
