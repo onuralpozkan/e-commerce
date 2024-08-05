@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__brand-container {
+    margin-right: auto;
+  }
+
+  &__search-container {
+  }
+
+  &__login-container {
+    margin-left: 16px;
+  }
+}

@@ -1,12 +1,16 @@
 import { Outlet } from "react-router-dom";
+import CategoriesContainer from "~/features/Categories/containers/Categories.container";
+import "./Main.scss";
+import Header from "../components/header/Header";
 
 const MainLayout = () => {
   return (
-    <div className="main-layout">
-      <div className="header">HEADER</div>
+    <main className="main-layout">
+      <Header />
+      <CategoriesContainer />
       <Outlet />
       <div className="footer">FOOTER</div>
-    </div>
+    </main>
   );
 };
 

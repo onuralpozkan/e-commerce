@@ -5,7 +5,7 @@ const ProductCardTemplate = ({ product }: { product: Product }) => {
   return (
     <div className="product-card">
       <img
-        className="product__img"
+        className="product-card__img"
         src={product?.images[0] || ""}
         alt={product.title}
         style={{ maxWidth: 180 }}
