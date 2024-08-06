@@ -1,29 +1,37 @@
 .categories {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
   position: relative;
+  border-bottom: 1px solid var(--ec-light);
+  display: flex;
+  &__button {
+    margin-right: auto;
+  }
 
   &__list {
-    position: absolute;
-    background-color: blanchedalmond;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // border: 1px solid var(--ec-light);
     transition: all 0.3s ease;
-    left: 50%;
-    transform: translateX(-50%);
     min-width: 300px;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     padding: 1rem;
-    top: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 400px;
 
-    &.open {
-      opacity: 1;
-    }
-    &.close {
-      opacity: 0;
-      user-select: none;
-      pointer-events: none;
-    }
+    // &.open {
+    //   opacity: 1;
+    // }
+    // &.close {
+    //   opacity: 0;
+    //   user-select: none;
+    //   pointer-events: none;
+    // }
+  }
+
+  &__list-item {
+    margin-left: 0.5em;
   }
 }

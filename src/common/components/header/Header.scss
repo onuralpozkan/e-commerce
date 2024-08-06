@@ -1,10 +1,10 @@
 .header {
   display: flex;
   align-items: center;
-  background-color: white;
   padding: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  border-bottom: 1px solid var(--ec-light);
 
   &__brand-container {
     margin-right: auto;
@@ -13,7 +13,8 @@
   &__search-container {
   }
 
-  &__login-container {
-    margin-left: 16px;
+  &__login-container,
+  &__sign-up-button {
+    margin-left: 1rem;
   }
 }

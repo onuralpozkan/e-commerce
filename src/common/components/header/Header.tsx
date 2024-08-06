@@ -1,4 +1,5 @@
 import Button from "../button/Button";
+import SearchInput from "../searchInput/SearchInput";
 import "./Header.scss";
 
 const Header = () => {
@@ -8,12 +9,7 @@ const Header = () => {
         <span className="header__brand">Brand</span>
       </div>
       <div className="header__search-container">
-        <input
-          type="search"
-          name="searchProducts"
-          id="searchProducts"
-          placeholder="Search..."
-        />
+        <SearchInput role="searchbox" />
       </div>
       <div className="header__login-container">
         <Button variant="primary" className="header__login-button">

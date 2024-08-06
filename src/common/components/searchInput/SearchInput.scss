@@ -1,0 +1,15 @@
+.search-input {
+  border-radius: 0.5em;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0.75em 1em;
+  border: 1px solid var(--ec-primary);
+
+  opacity: 0.5;
+
+  &:active,
+  &:focus {
+    outline: none;
+    opacity: 1;
+  }
+}
