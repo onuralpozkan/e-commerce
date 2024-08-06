@@ -1,6 +1,15 @@
 * {
   letter-spacing: normal !important;
 }
+:root {
+  /* colors */
+  --ec-primary: #262626;
+  --ec-secondary: #d94a56;
+  --ec-disabled: #787878;
+  --ec-light: #f2f2f2;
+  --ec-primary-light: #d94e67;
+  --ec-primary-dark: #a6495a;
+}
 html {
   overflow: auto;
 }

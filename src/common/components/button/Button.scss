@@ -1,37 +1,50 @@
 .button {
   outline: none;
-  background: gainsboro;
+  background: var(--ec-secondary);
 
-  &:active,
-  &:focus {
+  &:active {
     outline: none;
+    outline: 1px solid var(--ec-light);
   }
 
-  padding: 1em;
+  &:focus {
+    box-shadow: 0px 0px 4px 2px var(--ec-disabled);
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  padding: 0.75em 1em;
   font-size: 14px;
   line-height: 20px;
 
   border-radius: 0.5em;
 
   &--primary {
-    background-color: cadetblue;
-    color: white;
+    background-color: var(--ec-primary);
+    color: var(--ec-light);
   }
 
   &--secondary {
-    background-color: black;
-    color: white;
+    background-color: var(--ec-light);
+    color: var(--ec-primary);
   }
+
   &--text {
     background: none;
-    color: black;
+    color: var(--ec-primary);
     &:hover {
       text-decoration: underline;
+    }
+    &:focus,
+    &:active {
+      box-shadow: none;
     }
   }
 
   &:disabled {
-    background-color: gray;
+    background-color: var(--ec-disabled);
     cursor: not-allowed;
   }
 }
