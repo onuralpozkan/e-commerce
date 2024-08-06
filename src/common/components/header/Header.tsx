@@ -1,3 +1,4 @@
+import Button from "../button/Button";
 import "./Header.scss";
 
 const Header = () => {
@@ -15,8 +16,12 @@ const Header = () => {
         />
       </div>
       <div className="header__login-container">
-        <button className="header__login-button">Login</button>
-        <button className="header__sign-up-button">Sign up</button>
+        <Button variant="primary" className="header__login-button">
+          Login
+        </Button>
+        <Button variant="text" className="header__sign-up-button">
+          Sign up
+        </Button>
       </div>
     </header>
   );

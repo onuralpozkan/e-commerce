@@ -1,0 +1,37 @@
+.button {
+  outline: none;
+  background: gainsboro;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  padding: 1em;
+  font-size: 14px;
+  line-height: 20px;
+
+  border-radius: 0.5em;
+
+  &--primary {
+    background-color: cadetblue;
+    color: white;
+  }
+
+  &--secondary {
+    background-color: black;
+    color: white;
+  }
+  &--text {
+    background: none;
+    color: black;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+}
