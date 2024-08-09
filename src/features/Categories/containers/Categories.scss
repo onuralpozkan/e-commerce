@@ -9,26 +9,14 @@
   }
 
   &__list {
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // border: 1px solid var(--ec-light);
     transition: all 0.3s ease;
-    min-width: 300px;
     display: flex;
-    padding: 1rem;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 400px;
+    justify-content: stretch;
 
-    // &.open {
-    //   opacity: 1;
-    // }
-    // &.close {
-    //   opacity: 0;
-    //   user-select: none;
-    //   pointer-events: none;
-    // }
+    &.close {
+      justify-content: flex-end;
+    }
   }
 
   &__list-item {
