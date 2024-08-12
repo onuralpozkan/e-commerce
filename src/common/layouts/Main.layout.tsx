@@ -5,12 +5,14 @@ import Header from "../components/header/Header";
 
 const MainLayout = () => {
   return (
-    <main className="main-layout">
-      <Header />
-      <CategoriesContainer />
-      <Outlet />
-      <div className="footer">FOOTER</div>
-    </main>
+    <>
+      <main className="main-layout">
+        <Header />
+        <CategoriesContainer />
+        <Outlet />
+      </main>
+      <footer className="footer">FOOTER</footer>
+    </>
   );
 };
 
